@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DataSyncer – Rural Data Entry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 DataSyncer</h1>
+    <p class="subtitle">Offline-friendly data collector for field use</p>
+
+    <form id="dataForm">
+      <label for="name">👤 Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="age">🎂 Age</label>
+      <input type="number" id="age" required />
+
+      <label for="village">🏡 Village Name</label>
+      <input type="text" id="village" required />
+
+      <label for="symptoms">🤒 Symptoms / Issue</label>
+      <textarea id="symptoms" rows="3"></textarea>
+
+      <button type="submit">✅ Save Entry</button>
+    </form>
+
+    <div id="status" class="status-box">💾 Waiting for input...</div>
+  </div>
+
+  <hr>
+  <h2>📋 Saved Entries</h2>
+  <div id="entryList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
